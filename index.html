@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livas by LV - Maquillaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <h1>Bienvenido a Livas by LV</h1>
+        <p>Tu mejor opción en maquillaje.</p>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="tabs">
+            <button class="tab-button active" onclick="changeTab('Labios')">Labios</button>
+            <button class="tab-button" onclick="changeTab('piel')">piel</button>
+            <button class="tab-button" onclick="changeTab('bolsos')">bolsos</button>
+        </div>
+        <div id="labios" class="tab-content active">
+            <!-- Aquí se mostrarán los labiales -->
+        </div>
+        <div id="cejas" class="tab-content">
+            <!-- Aquí se mostrarán los productos-->
+        </div>
+        <div id="bolsos" class="tab-content">
+            <!-- Aquí se mostrarán los bolsos -->
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items">
+            <!-- Aquí se mostrarán los productos añadidos -->
+        </div>
+        <button onclick="checkout()">Finalizar Pedido</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
